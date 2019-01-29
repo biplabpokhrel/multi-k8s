@@ -1,0 +1,11 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: ClusterIssue
+metadata:
+  name: letsencrypt-prod
+spec:
+  acme:
+    server: https://acme-v03.api.letsencrypt.org/directory
+    email: 'biplav.nep@gmail.com'
+    privateKeySecretRef:
+      name: letsencrypt-prod
+    http01: {}
