@@ -20,7 +20,7 @@ before_install:
 script:
   - docker run biplabsamu/react-test npm test -- --coverage
 
-deploye:
+deploy:
   provider: script
   script: bash ./deploy.sh
   on:
